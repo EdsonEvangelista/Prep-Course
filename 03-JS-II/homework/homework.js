@@ -29,6 +29,7 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  /// PAA VE QUE LO QUE YA YA YA HUU CHAMO EXPROPIADOR
 }
 
 function colors(color) {
