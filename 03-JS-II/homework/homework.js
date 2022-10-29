@@ -179,13 +179,15 @@ function esPrimo(numero) {
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
-  // Nota: Los números 0 y 1 NO son considerados números primos  
-  if (numero === 1 || numero === 0) {
-    return false;
+  // Nota: Los números 0 y 1 NO son considerados números primos
+  if( numero < 2) return false;
+  if(numero === 2) return true;
+  for(var i = 2; i < numero; i++) {
+    if(numero % i === 0) {
+      return false;
+    }
   }
-  else if (numero % numero === 0 && numero % 1 === 0) {
-    return true;        
-  }  
+  return true;
 }
 
 function esVerdadero(valor){
@@ -207,14 +209,14 @@ function tablaDelSeis(){
   var nuevoArray = [];
   var numero = 0;
   
-  for (i = 0 ; i < 9 ; i++) {
+  for (i = 0 ; i <= 10 ; i++) {
     
-    if (numero === 0){
-      nuevoArray.fill(numero);
+    if (i === 0){
+      nuevoArray.push(numero);     
     }
     else{
       numero = numero + 6;
-    nuevoArray.fill(numero);
+      nuevoArray.push(numero);
     }    
   }
   return nuevoArray;
