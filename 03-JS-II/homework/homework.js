@@ -209,15 +209,9 @@ function tablaDelSeis(){
   var nuevoArray = [];
   var numero = 0;
   
-  for (i = 0 ; i <= 10 ; i++) {
+  for (i = 0 ; i < 11 ; i++) {
     
-    if (i === 0){
-      nuevoArray.push(numero);     
-    }
-    else{
-      numero = numero + 6;
-      nuevoArray.push(numero);
-    }    
+    nuevoArray.push(6 * i);   
   }
   return nuevoArray;
 }
